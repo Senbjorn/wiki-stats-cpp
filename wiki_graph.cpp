@@ -22,7 +22,7 @@ void  WikiGraph::load_from_stream(std::istream &file)
     redirect = new int32_t [n];
     offset = new int32_t [n+1];
      //FIXIT прочитать граф из файла
-     std::cout << utf16_to_utf8(L"Граф загружен");
+     std::cout << utf16_to_utf8(L"Граф загружен") << std::endl;
 }
 
 int32_t  WikiGraph::get_number_of_links_from(int32_t id)
