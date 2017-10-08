@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "utf8.hpp"
 
 
 class WikiGraph {

@@ -1,8 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <string>
 #include "wiki_graph.hpp"
-#include "utf8.hpp"
 
 WikiGraph::~WikiGraph(){
     if (nlinks > 0){
