@@ -13,7 +13,7 @@ class WikiGraph {
         WikiGraph () {nlinks = 0;};
         ~WikiGraph();
 
-        void load_from_stream(istream&);
+        void load_from_stream(std::istream&);
         int32_t get_number_of_links_from(int32_t);
         int32_t* get_links_from(int32_t);
         int32_t get_id(std::string);

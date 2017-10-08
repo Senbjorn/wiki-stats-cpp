@@ -11,7 +11,7 @@ int main(int argc, char* argv[]){
         return -1;
     }
     
-    ifstream file(argv[1]);
+    std::ifstream file(argv[1]);
     if (file){
         std::cout << utf16_to_utf8(L"Загружаю граф из файла: ") << argv[1] << std::endl;;
         WikiGraph wg;

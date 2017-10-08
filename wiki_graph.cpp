@@ -10,7 +10,7 @@ WikiGraph::~WikiGraph(){
     }
 }
 
-void  WikiGraph::load_from_stream(istream &file)
+void  WikiGraph::load_from_stream(std::istream &file)
 {
 
     int32_t n;
