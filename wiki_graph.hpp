@@ -7,7 +7,8 @@
 class WikiGraph {
     private:
         std::string * titles;
-        int32_t *sizes, *links, *redirect, *offset, nlinks;
+        int32_t *sizes, *links, *offset, n_links, n_pages;
+        bool * redirect;
 
     public:
         WikiGraph () {nlinks = 0;};

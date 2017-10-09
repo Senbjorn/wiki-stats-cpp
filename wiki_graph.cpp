@@ -1,7 +1,7 @@
 #include "wiki_graph.hpp"
 
 WikiGraph::~WikiGraph(){
-    if (nlinks > 0){
+    if (n_links > 0){
         delete[] titles;
         delete[] sizes;
         delete[] links;
@@ -13,15 +13,16 @@ WikiGraph::~WikiGraph(){
 void  WikiGraph::load_from_stream(std::istream &file)
 {
 
-    int32_t n;
-     n = nlinks = 0; //FIXIT: прочитать из файла
+     n_pages = n_links = 0; //FIXIT: прочитать из файла
         
-    titles = new std::string [n];
-    sizes = new int32_t [n];
-    links = new int32_t [nlinks];
-    redirect = new int32_t [n];
-    offset = new int32_t [n+1];
-     //FIXIT прочитать граф из файла
+    titles = new std::string [n_pages];
+    sizes = new int32_t [n_pages];
+    links = new int32_t [n_links];
+    redirect = new int32_t [n_pages];
+    offset = new int32_t [n_pages + 1];
+
+    //FIXIT прочитать граф из файла
+
      std::cout << utf16_to_utf8(L"Граф загружен") << std::endl;
 }
 
