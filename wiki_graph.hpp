@@ -11,7 +11,15 @@ class WikiGraph {
         bool * redirect;
 
     public:
-        WikiGraph () {nlinks = 0;};
+        WikiGraph () {
+            n_links = 0;
+            n_pages = 0;
+            links = nullptr;
+            offset = nullptr;
+            sizes = nullptr;
+            redirect = nullptr;
+            titles = nullptr;
+        }
         ~WikiGraph();
 
         void load_from_stream(std::istream&);
